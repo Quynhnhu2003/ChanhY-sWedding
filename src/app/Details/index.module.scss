@@ -35,10 +35,11 @@
     align-items: center;
     margin-bottom: -3rem;
     margin-top: 1rem;
-    &__img {
+    img {
       width: 100px;
-      height: 100%;
-    }
+      height: fit-content;
+      border-radius: 16px;
+  }
   }
   &__text {
     font-family: Arial, Helvetica, sans-serif;
