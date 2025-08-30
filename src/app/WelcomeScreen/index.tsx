@@ -12,7 +12,7 @@ export default function WelcomeScreen({ onEnter }: { onEnter: any }) {
     setOpened(true);
     setTimeout(() => {
       onEnter && onEnter(); // Callback hiển thị nội dung chính
-    }, 15000); // delay trùng animation
+    }, 20000); // delay trùng animation
   };
 
   return (

@@ -11,7 +11,7 @@ function Details() {
   return (
     <div className={styles.detailsContainer}>
       <AnimatedSection animationType="slideInRight" delay={0.3}>
-        <CustomizeImg src={"/wrapper__details.jpg"} alt="banner" />
+        <CustomizeImg src={"https://res.cloudinary.com/dwcg5odh2/image/upload/v1756544764/wrapper__details_gfanys.jpg"} alt="banner" />
       </AnimatedSection>
       <div className={styles.detailsContainer__content}>
         <AnimatedSection
@@ -19,7 +19,7 @@ function Details() {
           delay={0.3}
           className={styles.detailsContainer__header}
         >
-          <CustomizeImg src="/chu-hy.jpg" className={styles.detailsContainer__header__img} alt="banner" />
+          <CustomizeImg src="https://res.cloudinary.com/dwcg5odh2/image/upload/v1756544751/chu-hy_fkhrkw.jpg" className={styles.detailsContainer__header__img} alt="banner" />
         </AnimatedSection>
 
         <InformationParents />

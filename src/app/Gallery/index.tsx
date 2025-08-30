@@ -9,54 +9,54 @@ import CustomizeImg from "../../ultils/components/CustomizeImg";
 const listImgGallery = [
   {
     id: 1,
-    imgSrc: "/gallery/gallery-12.jpg",
+    imgSrc: "https://res.cloudinary.com/dwcg5odh2/image/upload/v1756544736/gallery-12_zddyng.jpg",
   },
   {
     id: 2,
-    imgSrc: "/gallery/gallery-1.jpg",
+    imgSrc: "https://res.cloudinary.com/dwcg5odh2/image/upload/v1756544692/gallery-1_u0lnix.jpg",
   },
   {
     id: 3,
-    imgSrc: "/gallery/gallery-3.jpg",
+    imgSrc: "https://res.cloudinary.com/dwcg5odh2/image/upload/v1756544700/gallery-3_pxfpb5.jpg",
   },
   {
     id: 7,
-    imgSrc: "/gallery/gallery-6.jpg",
+    imgSrc: "https://res.cloudinary.com/dwcg5odh2/image/upload/v1756544713/gallery-6_qsyi8z.jpg",
   },
   {
     id: 8,
-    imgSrc: "/gallery/gallery-7.jpg",
+    imgSrc: "https://res.cloudinary.com/dwcg5odh2/image/upload/v1756544718/gallery-7_mh80v2.jpg",
   },
   {
     id: 9,
-    imgSrc: "gallery/gallery-8.jpg",
+    imgSrc: "https://res.cloudinary.com/dwcg5odh2/image/upload/v1756544722/gallery-8_luh046.jpg",
   },
 ];
 
 const listImgSlideGallery: { id: number; imgSrc: string }[] = [
   {
     id: 1,
-    imgSrc: "/gallery/gallery-4.jpg", // ngang
+    imgSrc: "https://res.cloudinary.com/dwcg5odh2/image/upload/v1756544709/gallery-4_r3eok2.jpg", // ngang
   },
   {
     id: 2,
-    imgSrc: "/gallery/gallery-2.jpg", // ngang
+    imgSrc: "https://res.cloudinary.com/dwcg5odh2/image/upload/v1756544696/gallery-2_kpma4o.jpg", // ngang
   },
   {
     id: 3,
-    imgSrc: "/gallery/gallery-5.jpg", // ngang
+    imgSrc: "https://res.cloudinary.com/dwcg5odh2/image/upload/v1756544703/gallery-5_lufdck.jpg", // ngang
   },
   {
     id: 4,
-    imgSrc: "/gallery/gallery-9.jpg",
+    imgSrc: "https://res.cloudinary.com/dwcg5odh2/image/upload/v1756544725/gallery-9_tziyqu.jpg",
   },
   {
     id: 5,
-    imgSrc: "/gallery/gallery-10.jpg",
+    imgSrc: "https://res.cloudinary.com/dwcg5odh2/image/upload/v1756544729/gallery-10_iudfpc.jpg",
   },
   {
     id: 6,
-    imgSrc: "/gallery/gallery-11.jpg",
+    imgSrc: "https://res.cloudinary.com/dwcg5odh2/image/upload/v1756544733/gallery-11_vrhcl6.jpg",
   },
 ];
 
