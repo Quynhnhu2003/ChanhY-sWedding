@@ -1,0 +1,17 @@
+{
+    "navbar": {
+      "home": "Home",
+      "about": "About",
+      "projects": "Projects",
+      "contact": "Contact"
+    },
+    "home": {
+      "greeting": "Hi, I'm Quỳnh Như",
+      "description": "A passionate Frontend Developer.",
+      "download_cv": "Download CV"
+    },
+    "about": {
+      "title": "About Me",
+      "bio": "Aspiring Junior Frontend Developer with passion for clean UI and learning."
+    }
+  }

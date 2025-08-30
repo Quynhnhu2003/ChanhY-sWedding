@@ -1,0 +1,17 @@
+{
+    "navbar": {
+      "home": "Trang chủ",
+      "about": "Giới thiệu",
+      "projects": "Dự án",
+      "contact": "Liên hệ"
+    },
+    "home": {
+      "greeting": "Chào bạn, mình là Quỳnh Như",
+      "description": "Một lập trình viên Frontend đầy nhiệt huyết.",
+      "download_cv": "Tải CV"
+    },
+    "about": {
+      "title": "Giới thiệu bản thân",
+      "bio": "Lập trình viên Frontend trẻ, yêu thích UI đẹp và luôn học hỏi."
+    }
+  }
