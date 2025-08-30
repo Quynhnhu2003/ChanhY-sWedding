@@ -16,7 +16,6 @@
   &__content {
     border: 1px solid #731c20;
     position: absolute;
-    height: fit-content;
     display: flex;
     flex-direction: column;
     gap: 2rem;
@@ -37,7 +36,7 @@
     margin-top: 1rem;
     img {
       width: 100px;
-      height: fit-content;
+      height: 100px;
       border-radius: 16px;
   }
   }
