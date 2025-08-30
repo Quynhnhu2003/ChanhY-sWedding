@@ -1,15 +1,52 @@
 @import './variables';
 @import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Hand:wght@400..700&display=swap');
 
+* {
+  margin: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
+  flex-shrink: 0;
+  line-height: 119.3125%;
+  appearance: none;
+  font-family: 'Times New Roman', Times, serif;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  img {
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-user-drag: none;
+    -webkit-touch-callout: none;
+  }
+
+  p {
+    margin: 0;
+  }
+}
+
 // Global styles
 body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+  overscroll-behavior-x: none;
   background-color: $light-bg;
   color: $dark-text;
   transition: all 0.3s ease-in-out;
   font-family: 'Times New Roman', Times, serif;
-  width: 100%;
   p {
     margin: 0;
+  }
+
+  img, video {
+    max-width: 100%;
+    height: auto;
+    display: block;
   }
 }
 
@@ -22,4 +59,5 @@ body.dark {
   flex-direction: column;
   gap: 8rem;
   width: 100%;
+  overflow-x: hidden;
 }
