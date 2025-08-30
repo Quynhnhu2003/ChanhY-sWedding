@@ -9,7 +9,7 @@ import CustomizeImg from "../../ultils/components/CustomizeImg";
 const listImgGallery = [
   {
     id: 1,
-    imgSrc: "/gallery/gallery_12.jpg",
+    imgSrc: "/gallery/gallery-12.jpg",
   },
   {
     id: 2,
@@ -67,7 +67,7 @@ function Gallery() {
       <div className={styles.gallery__grid}>
         {listImgGallery.slice(0, 3).map((i, index) => (
           <AnimatedSection animationType="fadeInUp" delay={0.3} key={i.id + "-" + index} className={styles.gallery__item}>
-            <CustomizeImg src={i.imgSrc} alt={`Wedding ${index + 1}`} />
+            <CustomizeImg src={i.imgSrc} alt={`Wedding ${index + 1}`} className={styles.gallery__item__img} />
           </AnimatedSection>
         ))}
 
@@ -75,7 +75,7 @@ function Gallery() {
 
         {listImgGallery.slice(-3).map((i, index) => (
           <AnimatedSection animationType="fadeInUp" delay={0.3} key={i.id + "-" + index} className={styles.gallery__item}>
-            <CustomizeImg src={i.imgSrc} alt={`Wedding ${index + 1}`} />
+            <CustomizeImg src={i.imgSrc} alt={`Wedding ${index + 1}`} className={styles.gallery__item__img} />
           </AnimatedSection>
         ))}
       </div>
