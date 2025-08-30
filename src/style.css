@@ -13,6 +13,7 @@
   &::-webkit-scrollbar {
     display: none;
   }
+  box-sizing: border-box;
 
   img {
     -moz-user-select: none;

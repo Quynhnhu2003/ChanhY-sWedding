@@ -1,5 +1,6 @@
 // ** Styles Import
 import AnimatedSection from "../../ultils/components/Animation/AnimatedSection";
+import CustomizeImg from "../../ultils/components/CustomizeImg";
 import styles from "./index.module.scss";
 
 // ** Another Import
@@ -49,8 +50,8 @@ function Countdown() {
 
   return (
     <div className={styles.countdownContainer}>
-      <AnimatedSection animationType="zoomIn" delay={0.3}>
-        <img src="/banner.JPG" alt="banner" />
+      <AnimatedSection animationType="zoomIn" delay={0.3} className={styles.countdownContainer__imageWrapper}>
+        <CustomizeImg src="/banner--countdown.jpg" alt="banner" />
       </AnimatedSection>
 
       <AnimatedSection

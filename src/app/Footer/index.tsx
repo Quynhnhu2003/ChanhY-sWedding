@@ -16,7 +16,7 @@ function Footer() {
         <TypingEffect strings={thankYouText} />
 
         <div className={styles.signature}>
-          <span>Minh Chánh &amp; Như Ý</span>
+          <span className={styles.signature__text}>Minh Chánh &amp; Như Ý</span>
         </div>
       </div>
 

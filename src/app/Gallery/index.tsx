@@ -4,6 +4,7 @@ import styles from "./index.module.scss";
 // ** Another Import
 import GallerySlider from "./components/GallerySlider";
 import AnimatedSection from "../../ultils/components/Animation/AnimatedSection";
+import CustomizeImg from "../../ultils/components/CustomizeImg";
 
 const listImgGallery = [
   {
@@ -66,29 +67,17 @@ function Gallery() {
       <div className={styles.gallery__grid}>
         {listImgGallery.slice(0, 3).map((i, index) => (
           <AnimatedSection animationType="fadeInUp" delay={0.3} key={i.id + "-" + index} className={styles.gallery__item}>
-            <img src={i.imgSrc} alt={`Wedding ${index + 1}`} />
+            <CustomizeImg src={i.imgSrc} alt={`Wedding ${index + 1}`} />
           </AnimatedSection>
         ))}
-
-        {/* {listImgSlideGallery.slice(0, 3).map((i, index) => (
-          <div key={i.id + "-" + index} className={styles.gallery__item}>
-            <img src={i.imgSrc} alt={`Wedding ${index + 1}`} />
-          </div>
-        ))} */}
 
         <GallerySlider listImgGallery={listImgSlideGallery} />
 
         {listImgGallery.slice(-3).map((i, index) => (
           <AnimatedSection animationType="fadeInUp" delay={0.3} key={i.id + "-" + index} className={styles.gallery__item}>
-            <img src={i.imgSrc} alt={`Wedding ${index + 1}`} />
+            <CustomizeImg src={i.imgSrc} alt={`Wedding ${index + 1}`} />
           </AnimatedSection>
         ))}
-
-        {/* {listImgSlideGallery.slice(-3).map((i, index) => (
-          <div key={i.id + "-" + index} className={styles.gallery__item}>
-            <img src={i.imgSrc} alt={`Wedding ${index + 1}`} />
-          </div>
-        ))} */}
       </div>
     </section>
   );

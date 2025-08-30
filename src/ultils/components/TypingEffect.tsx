@@ -12,7 +12,7 @@ export default function TypingEffect({ strings }: TypingEffectProps) {
   useEffect(() => {
     const typed = new Typed(el.current!, {
       strings,
-      typeSpeed: 15,
+      typeSpeed: 20,
       backSpeed: 5,
       backDelay: 2000,
       loop: false,

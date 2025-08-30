@@ -1,18 +1,17 @@
 // ** styles Import
-import AnimatedSection from "../../ultils/components/Animation/AnimatedSection";
-import InformationChildren from "./components/InformationChildren";
-import InformationParents from "./components/InformationParents";
 import styles from "./index.module.scss";
 
 // ** Another Import
-
-const img = "/chu-hy.jpg";
+import AnimatedSection from "../../ultils/components/Animation/AnimatedSection";
+import CustomizeImg from "../../ultils/components/CustomizeImg";
+import InformationChildren from "./components/InformationChildren";
+import InformationParents from "./components/InformationParents";
 
 function Details() {
   return (
     <div className={styles.detailsContainer}>
       <AnimatedSection animationType="slideInRight" delay={0.3}>
-        <img src={"/wrapper__details.jpg"} alt="banner" />
+        <CustomizeImg src={"/wrapper__details.jpg"} alt="banner" />
       </AnimatedSection>
       <div className={styles.detailsContainer__content}>
         <AnimatedSection
@@ -20,7 +19,7 @@ function Details() {
           delay={0.3}
           className={styles.detailsContainer__header}
         >
-          <img src={img} alt="banner" />
+          <CustomizeImg src="/chu-hy.jpg" className={styles.detailsContainer__header__img} alt="banner" />
         </AnimatedSection>
 
         <InformationParents />
