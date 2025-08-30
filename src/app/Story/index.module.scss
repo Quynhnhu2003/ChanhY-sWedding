@@ -33,6 +33,11 @@
     }
   }
 
+  .silde {
+    transform: rotateZ(-90deg);
+    height: 100%;
+  }
+
   :global(.swiper-slide) {
     opacity: 1;
     transform: scale(0.8);

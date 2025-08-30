@@ -18,23 +18,23 @@ import TypingEffect from "../../ultils/components/TypingEffect";
 const slideImage = [
   {
     id: 1,
-    img: "/slide/slide1.JPG",
+    img: "/slide/slide1.jpg",
   },
   {
     id: 2,
-    img: "/slide/slide2.JPG",
+    img: "/slide/slide2.jpg",
   },
   {
     id: 3,
-    img: "/slide/slide3.JPG",
+    img: "/slide/slide3.jpg",
   },
   {
     id: 4,
-    img: "/slide/slide4.JPG",
+    img: "/slide/slide4.jpg",
   },
   {
     id: 5,
-    img: "/slide/slide5.JPG",
+    img: "/slide/slide5.jpg",
   },
 ];
 
