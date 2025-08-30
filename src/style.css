@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Hand:wght@400..700&display=swap');
+
+* {
+  margin: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
+  flex-shrink: 0;
+  line-height: 119.3125%;
+  appearance: none;
+  font-family: 'Edu NSW ACT Hand', cursive;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  img {
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-user-drag: none;
+    -webkit-touch-callout: none;
+  }
+
+  p {
+    margin: 0;
+  }
+}
+
+html {
+  margin: 0;
+  overflow-x: hidden;
+}
+
+body {
+  overflow: hidden;
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  touch-action: none;
+  margin: 0;
+  overscroll-behavior-x: none;
+  overflow-x: hidden;
+
+  #root {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.swiper-pagination-bullet {
+  width: 6px;
+  height: 6px;
+  border-radius: 4px;
+}
+
+.ellipsis-text {
+  overflow: hidden;
+  display: -webkit-box;
+  line-clamp: 2;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
