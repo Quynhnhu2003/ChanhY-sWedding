@@ -1,0 +1,118 @@
+.welcomeScreen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #6b0506;
+  overflow-y: hidden;
+}
+
+.envelope {
+  position: relative;
+  width: 100%;
+  height: fit-content;
+  cursor: pointer;
+  perspective: 1000px;
+
+  .envelopeImg {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+    z-index: 2;
+    position: relative;
+    transition: transform 1.2s ease;
+  }
+
+  .letter {
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    right: 10%;
+    bottom: 10%;
+    background: #fff;
+    border-radius: 6px;
+    border: 2px solid #d4af37; // viền vàng ánh kim
+    padding: 20px;
+    line-height: 1.6;
+    text-align: center;
+    transform: translateY(100%);
+    opacity: 0;
+    transition: all 1s ease;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    // hiệu ứng viền trang trí nhẹ
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      width: 40px;
+      height: 40px;
+      border: 2px solid #d4af37;
+      border-radius: 50%;
+    }
+
+    &::before {
+      top: -20px;
+      left: -20px;
+    }
+
+    &::after {
+      bottom: -20px;
+      right: -20px;
+    }
+
+    h1 {
+      font-size: 1.8rem;
+      color: #a0525c; // màu đỏ rượu vang
+      margin-bottom: 0.5rem;
+      letter-spacing: 2px;
+    }
+
+    p {
+      font-size: 1rem;
+      color: #444;
+      margin: 0.5rem 0;
+    }
+
+    span {
+      display: block;
+      font-style: italic;
+      color: #666;
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+    }
+
+    .signature {
+      margin-top: 1rem;
+      text-align: center;
+
+      &__text {
+        color: #6e1f3e !important;
+        display: inline-block;
+        padding: 0.375rem 0.75rem;
+        border-radius: 999px;
+        border: 1px solid rgba(110, 31, 62, 0.28);
+        background: rgba(110, 31, 62, 0.06);
+        font-weight: 600;
+        letter-spacing: 0.02em;
+      }
+    }
+  }
+
+  &.open {
+    .envelopeImg {
+      transform: rotateX(120deg) scale(0.8);
+      opacity: 0;
+    }
+
+    .letter {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+}

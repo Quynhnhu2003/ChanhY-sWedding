@@ -5,17 +5,27 @@ import Countdown from "./app/Coundown";
 import MapWedding from "./app/MapWedding";
 import Footer from "./app/Footer";
 import Gallery from "./app/Gallery";
+import WelcomeScreen from "./app/WelcomeScreen";
+import { Fragment, useState } from "react";
 
 function Layout() {
+  const [entered, setEntered] = useState<boolean>(false);
+
   return (
     <div className="layoutContainer">
-      <Banner />
-      <OurStory />
-      <Gallery/>
-      <Details />
-      <Countdown />
-      <MapWedding />
-      <Footer />
+      {!entered ? (
+        <WelcomeScreen onEnter={() => setEntered(true)} />
+      ) : (
+        <Fragment>
+          <Banner />
+          <OurStory />
+          <Gallery />
+          <Details />
+          <Countdown />
+          <MapWedding />
+          <Footer />
+        </Fragment>
+      )}
     </div>
   );
 }
