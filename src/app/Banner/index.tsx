@@ -10,7 +10,7 @@ function Banner() {
     <div className={styles.headerContainer}>
       <div className={styles.headerContainer__banner}>
         <AnimatedSection animationType="zoomIn" delay={0.3}>
-          <CustomizeImg src={"/banner.jpg"} alt="banner" />
+          <CustomizeImg src={"https://res.cloudinary.com/dwcg5odh2/image/upload/v1756544755/banner_gipbvz.jpg"} alt="banner" />
         </AnimatedSection>
         <div className={styles.headerContainer__banner__overlay}></div>
       </div>

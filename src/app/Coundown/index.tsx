@@ -51,7 +51,7 @@ function Countdown() {
   return (
     <div className={styles.countdownContainer}>
       <AnimatedSection animationType="zoomIn" delay={0.3} className={styles.countdownContainer__imageWrapper}>
-        <CustomizeImg src="/banner--countdown.jpg" alt="banner" />
+        <CustomizeImg src="https://res.cloudinary.com/dwcg5odh2/image/upload/v1756544759/banner--countdown_qxgd5z.jpg" alt="banner" />
       </AnimatedSection>
 
       <AnimatedSection

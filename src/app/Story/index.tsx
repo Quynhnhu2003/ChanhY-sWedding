@@ -18,23 +18,23 @@ import TypingEffect from "../../ultils/components/TypingEffect";
 const slideImage = [
   {
     id: 1,
-    img: "/slide/slide1.jpg",
+    img: "https://res.cloudinary.com/dwcg5odh2/image/upload/v1756544544/slide1_bnfvzj.jpg",
   },
   {
     id: 2,
-    img: "/slide/slide2.jpg",
+    img: "https://res.cloudinary.com/dwcg5odh2/image/upload/v1756544665/slide2_xbzfrj.jpg",
   },
   {
     id: 3,
-    img: "/slide/slide3.jpg",
+    img: "https://res.cloudinary.com/dwcg5odh2/image/upload/v1756544670/slide3_bkkx3o.jpg",
   },
   {
     id: 4,
-    img: "/slide/slide4.jpg",
+    img: "https://res.cloudinary.com/dwcg5odh2/image/upload/v1756544675/slide4_zfzq8z.jpg",
   },
   {
     id: 5,
-    img: "/slide/slide5.jpg",
+    img: "https://res.cloudinary.com/dwcg5odh2/image/upload/v1756544680/slide5_rbxgan.jpg",
   },
 ];
 
