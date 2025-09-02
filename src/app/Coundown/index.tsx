@@ -1,10 +1,10 @@
 // ** Styles Import
-import AnimatedSection from "../../ultils/components/Animation/AnimatedSection";
-import CustomizeImg from "../../ultils/components/CustomizeImg";
 import styles from "./index.module.scss";
 
 // ** Another Import
 import { useEffect, useState } from "react";
+import AnimatedSection from "../../ultils/components/Animation/AnimatedSection";
+import CustomizeImg from "../../ultils/components/CustomizeImg";
 
 type CountdownTime = {
   days: number;
