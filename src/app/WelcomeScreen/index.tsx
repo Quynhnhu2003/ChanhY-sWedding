@@ -2,25 +2,41 @@
 import styles from "./index.module.scss";
 
 // ** Another Import
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
-export default function WelcomeScreen({ onEnter }: { onEnter: any }) {
-  const [opened, setOpened] = useState(false);
-  
+function WelcomeScreen({ onEnter }: { onEnter: () => void }) {
+  // ** State
+  const [opened, setOpened] = useState<boolean>(false);
+  const [entered, setEntered] = useState<boolean>(false);
 
-  const handleOpen = () => {
-    setOpened(true);
-    setTimeout(() => {
-      onEnter && onEnter(); // Callback hiển thị nội dung chính
-    }, 10000); // delay trùng animation
+  // ** useEffect
+  useEffect(() => {
+    // Sau 20s nếu chưa bấm thì tự động vào
+    if (opened && !entered) {
+      const timer = setTimeout(() => {
+        handleEnter();
+      }, 20000);
+      return () => clearTimeout(timer);
+    }
+  }, [opened, entered]);
+
+  // ** Function
+  const handleOpenOrEnter = () => {
+    if (!opened) {
+      setOpened(true);
+    } else if (!entered) {
+      handleEnter();
+    }
+  };
+
+  const handleEnter = () => {
+    setEntered(true);
+    onEnter && onEnter();
   };
 
   return (
-    <div className={styles.welcomeScreen}>
-      <div
-        className={`${styles.envelope} ${opened ? styles.open : ""}`}
-        onClick={handleOpen}
-      >
+    <div className={styles.welcomeScreen} onClick={handleOpenOrEnter}>
+      <div className={`${styles.envelope} ${opened ? styles.open : ""}`}>
         <img
           src="https://i.pinimg.com/736x/5d/29/9c/5d299cc409da970cc3e319ff4288543a.jpg"
           alt="Envelope"
@@ -37,10 +53,14 @@ export default function WelcomeScreen({ onEnter }: { onEnter: any }) {
             phúc này!
           </p>
           <div className={styles.signature}>
-          <span className={styles.signature__text}>Minh Chánh &amp; Như Ý</span>
-        </div>
+            <span className={styles.signature__text}>
+              Minh Chánh &amp; Như Ý
+            </span>
+          </div>
         </div>
       </div>
     </div>
   );
 }
+
+export default WelcomeScreen;
